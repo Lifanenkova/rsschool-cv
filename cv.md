@@ -10,3 +10,9 @@
 I want to work and study new technologies.
 I know, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.
 
+## Skills ##
+* HTML5
+* CSS3 (SCSS)
+* JavaScript
+* Git
+
