@@ -16,3 +16,29 @@ I know, that my ability to learn and to gain new skills will lead me through thi
 * JavaScript
 * Git
 
+## Code example ##
+```
+function flat(arr1, dep){
+    const newArr = [];
+    flatRec(arr1, dep);
+
+    function flatRec(arr, dep){
+             arr.forEach(element => {
+            if(Array.isArray(element)){
+                if(dep === 0){
+                    newArr.push(element);  
+                     return newArr;
+                }
+                dep--;
+                flatRec(element, dep);
+            }else{
+            newArr.push(element);  
+            }
+        }); 
+    }
+    return newArr;
+}
+```
+
+## Experience ##
+
