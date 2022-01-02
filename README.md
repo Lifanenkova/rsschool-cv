@@ -1,1 +1,2 @@
-# rsschool-cv
+https://lifanenkova.github.io/rsschool-cv/cv
+
