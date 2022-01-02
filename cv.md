@@ -42,3 +42,8 @@ function flat(arr1, dep){
 
 ## Experience ##
 
+## Courses ##
+Training center by FRESHCODE
+
+## English ##
+* A2
