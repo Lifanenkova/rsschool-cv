@@ -7,8 +7,8 @@
 }
 
 .container{
-    width: 80%;
-    margin: auto;
+    width:900px;
+    margin: 0 auto;
     background-color: var(--color);
 }
 
@@ -25,11 +25,11 @@ nav{
     background-color: var(--main-color);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin: 0 auto;
 }
 
 
 .navigation-item{
-    
     list-style: none;
     border-radius: 10px;
 }
@@ -46,12 +46,12 @@ nav{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    
 }
 
 .prof{
     border-radius: 10px 0 0 10px;
     background-color: var(--main-color);
+    padding:10px;
 }
 
 h1{
@@ -70,6 +70,7 @@ h1{
     width: 30%;
     min-width: 150px;
     height: 30%;
+    /* min-height: 150px; */
     margin: 20px;
     border: 10px solid var(--light-color);
     border-radius: 50%;
@@ -105,7 +106,7 @@ h2{
 }
 
 .about{
-    width: 300px;
+    width: 30%;
     min-width: 150px;
     padding:20px;
     background-color: var(--color);
@@ -116,19 +117,21 @@ footer{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    margin: auto;
+    margin-top: auto;
     background-color: var(--main-color);
-    padding: 0 30px;
+    padding: 20px;
     font-size: 2em;
     font-weight: 800;
+    border-radius: 10px 10px 0 0;
 }
 
 .logo-link,
 .logo-github{
+    display: inline-block;
     width: 20%;
 }
 
 .logo{
     width: 100%;
+    padding:10px;
 }
