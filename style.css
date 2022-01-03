@@ -1,3 +1,134 @@
 *{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    --color: rgb(193,164,148);
+    --light-color: rgb(239,229,227);
+    --main-color: rgb(88,122,131);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: var(--color);
+}
+
+nav{
+    margin-bottom: 20px;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline-start: 0px;
+    background-color: var(--main-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.navigation-item{
+    
+    list-style: none;
+    border-radius: 10px;
+}
+
+.navigation-link{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: 600;
+}
+
+.main-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+
+.prof{
+    border-radius: 10px 0 0 10px;
+    background-color: var(--main-color);
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.profession{
+    font-size: 1.5em;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+.avatar{
+    width: 30%;
+    min-width: 150px;
+    height: 30%;
+    margin: 20px;
+    border: 10px solid var(--light-color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.avatar-photo{
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-item{
+    list-style: none;
+    margin-top: 10px;
+}
+
+span{
+    font-weight: 600;
+    color: rgb(250, 151, 134);
+}
+
+h2{
+    color:var(--light-color)
+}
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about{
+    width: 300px;
+    min-width: 150px;
+    padding:20px;
+    background-color: var(--color);
+
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: auto;
+    background-color: var(--main-color);
+    padding: 0 30px;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.logo-link,
+.logo-github{
+    width: 20%;
+}
+
+.logo{
+    width: 100%;
 }

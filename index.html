@@ -4,9 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>CV. Cross Check</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="navigation">
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#contacts">Contacts</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#AboutMe">About me</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#CodeExample">Code example</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#Courses">Courses</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#English">English</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="main-info">
+                <div class="avatar">
+                    <img class="avatar-photo" src="./avatar.png" alt="avatar">
+                </div>
+                <div class="prof">
+                    <h1>OKSANA LIFANENKOVA</h1>
+                    <p class="profession">Front End Developer</p>
+                    <ul id="contacts">
+                        <li class="contacts-item"><span>LinkedIn: </span>
+                            <a class="contacts-item" href="http://www.linkedin.com/in/oksana-lifanenkova-238256185">http://www.linkedin.com/in/oksana-lifanenkova-238256185</a>
+                        </li>
+                        <li class="contacts-item"><span>GitHUB: </span>
+                            <a class="contacts-item" href="https://github.com/Lifanenkova">https://github.com/Lifanenkova</a>
+                        </li>
+                        <li class="contacts-item"><span>e-mail: </span>
+                            <a class="contacts-item" href="mailto:olifa19@gmail.com">olifa19@gmail.com</a>
+                        </li>
+                        <li class="contacts-item">
+                            <span>Discord: </span>Oksana#0227
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <div class="skills">
+                <div class="about">
+                    <article>
+                        <h2 id="AboutMe">About me</h2>
+                        <p>I want to work and study new technologies.
+                        I know, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.</p>
+                    </article>
+                    <article>
+                        <h2 id="Skills">Skills</h2>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3 (SCSS)</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                            <li>SQL</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="more">
+                    <article>
+                        <h2 id="CodeExample">Code example</h2>
+                        <pre>
+                            <code>
+            function flat(arr1, dep){
+                const newArr = [];
+                flatRec(arr1, dep);
+             
+                function flatRec(arr, dep){
+                    arr.forEach(element => {
+                        if(Array.isArray(element)){
+                            if(dep === 0){
+                                newArr.push(element);  
+                                return newArr;
+                            }
+                            dep--;
+                            flatRec(element, dep);
+                        }else{
+                        newArr.push(element);  
+                        }
+                    }); 
+                }
+                return newArr;
+            }
+                            </code>
+                        </pre>
+                    </article>
+                    <article>
+                        <h2 id="Courses">Courses</h2>
+                        <ul>
+                            <li>Training center by FRESHCODE</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2 id="English">English</h2>
+                        <ul>
+                            <li>A2</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a class="logo-link" href="https://rs.school/js/">
+                <img class="logo" src="./logo-rsschool3.png" alt="rss-logo">
+            </a>
+            <p>2022</p>
+            <a class="logo-github" href="https://github.com/Lifanenkova">
+                <svg height="64" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="64" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
+        </footer>
+    </div>
 </body>
 </html>
